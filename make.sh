@@ -98,6 +98,7 @@ rm -f "${FEATURE_LIST_FILE:?}" || true
 echo "[*] generating key pair..."
 PUBLIC_KEY_FILE=$BUILD_DIR/public.key
 PRIVATE_KEY_FILE=$BUILD_DIR/private.key
+
 cp -f ./keys/public.key "$PUBLIC_KEY_FILE"
 cp -f ./keys/private.key "$PRIVATE_KEY_FILE"
 

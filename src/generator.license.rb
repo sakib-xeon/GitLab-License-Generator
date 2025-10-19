@@ -6,12 +6,12 @@ license_json_path = nil
 public_key_path = nil
 private_key_path = nil
 features_json_path = nil
-license_name="Tim Cook"
-license_company="Apple Computer, Inc."
-license_email="tcook@apple.com"
+license_name="Xeon Engineering Team"
+license_company="Xeon Technology Ltd."
+license_email="admin@xeon.email"
 license_plan='ultimate'
-license_user_count=2147483647
-license_expire_year=2500
+license_user_count=10000
+license_expire_year=2800
 
 require 'optparse'
 OptionParser.new do |opts|
@@ -128,7 +128,7 @@ license.licensee = {
 }
 
 # required of course
-license.starts_at         = Date.new(1976, 4, 1)
+license.starts_at         = Date.new(2025, 4, 1)
 puts Date.new()
 # required since gem gitlab-license v2.2.1
 license.expires_at        = Date.new(license_expire_year, 4, 1)
